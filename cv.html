@@ -1,111 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adnan Hajro - Web Developer</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .profile img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.sidebar p {
+    font-size: 14px;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.sidebar .skills ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.sidebar .skills li {
+    margin-bottom: 8px;
+}
+
+.main-content {
+    width: 70%;
+    padding: 20px;
+}
+
+.main-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+}
+
+.main-content section {
+    margin-bottom: 20px;
+}
+
+.main-content .projects .project {
+    margin-bottom: 15px;
+}
+
+.main-content .about a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.main-content .about a:hover {
+    text-decoration: underline;
+}
+
+
+    </style>
+</head>
 <body>
-
-
-<h2>CV </h2>
-
-
-
-<form action="">
-
-<fieldset>
-<legend>Personal info</legend>
-<label for="mail">E-mail:</label><br>
-<input type="email" id="mail" name="e-mail"><br>
-<label for="mail">E-mail:</label><br>
-<input type="email" id="mail" name="e-mail"><br>
-<label for="mail">E-mail:</label><br>
-<input type="email" id="mail" name="e-mail"><br>
-
-</fieldset>
-
-</form>
-
-<br>
-<br>
-
-<form action="">
-
-    <fieldset>
-        <legend>Introduction</legend>
-   <textarea name="textarea" id="text" placeholder="write something" minlength="1000" maxlength="1000"></textarea>
-    
-    </fieldset>
-    
-    </form>
-
-<br>
-<br>
-
-<form action="">
-    <fieldset>
-        <legend> Skills </legend>
-<legend>select your skills:</legend>
-        <input type="checkbox" id="html" name="html" />
-    <label for="html">HTML</label> <br>
-
-    <input type="checkbox" id="css" name="css" />
-    <label for="css">CSS</label>  <br>
-
-    <input type="checkbox" id="js" name="js" />
-    <label for="js">JS</label> <br>
-
-    </fieldset>
-</form>
-
-<br>
-<br>
-
-<form action="">
-
-<fieldset>
-    <legend>Experience</legend>
-<label for="position">Position: </label>
-<input type="text" id="position">
-<br>
-<br>
-<legend>Write something</legend>
-<textarea name="exp" id="exp" maxlength="1000" minlength="1000">
-    
-</textarea>
-
-</fieldset>
-
-</form>
-<br>
-<br>
-<form action="">
-    <fieldset>
-        <legend>Education</legend>
-       <select name="high" id="high">
-        <option value="highschool">Highschool I</option>
-        <option value="highschool">Highschool II</option>
-        <option value="highschool">Highschool III</option>
-       </select>
-       <br>
-       <br>
-       <legend>Certification:</legend>
-       <textarea name="text2" id="text2" maxlength="1000" minlength="1000"></textarea>
-    </fieldset>
-</form>
-
-<br>
-<br>
-
-<form action="">
-    <fieldset>
-        <legend>Projects</legend>
-
-        <legend>Describe your projects</legend>
-        <textarea name="text3" id="text3" maxlength="1000" minlength="1000"></textarea>
-
-    </fieldset>
-</form>
-<br>
-<br>
-
-<form action="">
-    <button>submit</button>
-</form>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="m.jfif" alt="Profile Picture">
+                <h2>Mirza Cakal</h2>
+                <p>Web Developer</p>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p><strong>Phone:</strong> 222222222</p>
+                <p><strong>Email:</strong> mirzacakal@example.com</p>
+                <p><strong>Location:</strong> Sarajevo, Bosnia and Herzegovina</p>
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <p>Bachelor's Degree in Computer Science - University of Sarajevo</p>
+                <p>Certified JavaScript Developer - FreeCodeCamp</p>
+                <p>Responsive Web Design Certification - Coursera</p>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>React, Redux, Node.js</li>
+                    <li>RESTful APIs, Express</li>
+                    <li>Version Control (Git, Bitbucket)</li>
+                    <li>Web Performance Optimization</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <section class="introduction">
+                <h2>Introduction</h2>
+                <p>Hello, my name is Mirza Cakal. I am a passionate Web developer with over five years of experience in building modern web applications...</p>
+            </section>
+            <section class="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li><strong>Web Developer</strong> at XYZ Corp (2018 - Present)</li>
+                    <li><strong>Frontend Developer</strong> at ABC Ltd (2016 - 2018)</li>
+                    <li><strong>Freelance Web Designer</strong> (2015 - 2016)</li>
+                </ul>
+            </section>
+            <section class="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Social Media Campaign for Product Launch</h3>
+                    <p><strong>Date:</strong> March 2021</p>
+                    <p>Developed and executed a social media campaign to promote the launch of a new product, resulting in 100,000 impressions and 5,000 new followers within the first month.</p>
+                </div>
+                <div class="project">
+                    <h3>Content Strategy Overhaul</h3>
+                    <p><strong>Date:</strong> 2020</p>
+                    <p>Worked with a cross-functional team to redesign the company's blog strategy, aligning with SEO goals and doubling monthly site traffic.</p>
+                </div>
+            </section>
+            <section class="hobbies">
+                <h2>Hobbies</h2>
+                <p><strong>Photography:</strong> Specializes in landscape and portrait photography; has showcased work in local galleries.</p>
+                <p><strong>Travel:</strong> Experienced traveler, having visited over 20 countries, which has broadened cultural understanding and adaptability.</p>
+                <p><strong>Volunteering:</strong> Regular volunteer at the local animal shelter, assisting with care and adoption events.</p>
+            </section>
+            <section class="about">
+                <h2>About</h2>
+                <p>Visit my <a href="github.com">GitHub profile</a> for more projects.</p>
+            </section>
+        </div>
+    </div>
 </body>
+</html>
